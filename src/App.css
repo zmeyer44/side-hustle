@@ -1,9 +1,9 @@
 :root{
-  --mainBlue:#2a2a72;
-  --lightBlue:#009ffd;
+  --mainBlue:#000000;
+  --lightBlue:#f0a500;
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
-  --mainYellow:#ffa400;
+  --mainYellow:#f0a500;
 }
 body{
  
@@ -17,10 +17,21 @@ body{
   text-transform: uppercase;
 }
 .text-blue{
-  color: var(--mainBlue);
+  color: var(--mainWhite);
 }
 .text-bright{
   color: var(--lightBlue);
+}
+.llt{
+  font-size: .8rem !important;
+}
+.ttt{
+  position: absolute;
+  margin: 0 auto;
+  padding-right: 5px;
+}
+.filter-green {
+  filter: invert(58%) sepia(90%) saturate(1140%) hue-rotate(6deg) brightness(100%) contrast(103%);
 }
 .btn-black{
   background: transparent;
