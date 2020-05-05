@@ -5,6 +5,9 @@ import EmptyCart from "./EmptyCart";
 import { ProductConsumer } from "../../context";
 import CartList from "./CartList";
 import CartTotals from "./CartTotals";
+import CopyList from "./CopyList";
+import Copier from "./Copier";
+import InstagramButton from "./InstagramButton";
 export default class Cart extends Component {
   render() {
     return (
@@ -19,6 +22,7 @@ export default class Cart extends Component {
                   <CartColums />
                   <CartList value={value} />
                   <CartTotals value={value} history={this.props.history}/>
+                  
                 </React.Fragment>
               );
             } else {

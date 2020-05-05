@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import PayPalButton from './PayPalButton';
+import InstagramButton from './InstagramButton';
 export default function CartTotals({value,history}) {
     const{cartSubTotal,cartDelivery,cartTotal,clearCart} = value;
     return (
@@ -34,7 +35,7 @@ export default function CartTotals({value,history}) {
                             </span>
                             <strong>$ {cartTotal}</strong>
                         </h5>
-                        <PayPalButton total={cartTotal} clearCart={clearCart} history={history}/>
+                        <InstagramButton />
                     </div>
                 </div>
             </div>
